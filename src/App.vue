@@ -57,6 +57,7 @@ export default {
     filteredPokemons() {
       // ฟิลเตอร์ Pokémon ตามค่าการค้นหา
       const term = this.searchTerm.toLowerCase();
+      
       return this.pokemons.filter(pokemon =>
         pokemon.name.toLowerCase().includes(term) // ตรวจสอบว่าชื่อของ Pokémon มีคำค้นหาหรือไม่
       );
